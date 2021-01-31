@@ -10,16 +10,16 @@ while True:
     user = input('r to read passwords w to save, x to break')
 
     if user == 'w':
-        passdir = input('type dir to save passwords include filename too.')
+        passdir = input('Type the filepath and press enter. .')
         password = open(passdir, 'a')
-        account = str(input('type account'))
-        pas = str(input('type pass'))
+        account = str(input('type your account name'))
+        pas = str(input('type your password'))
         password.write(account )
         password.write('\n')
         password.write(pas)
         password.close()
     elif user == 'r':
-        dir = input('please type the path and the file')
+        dir = input('Please type the the file path of the passwordfile.')
         passr = open(dir, 'r').read()
         print (passr)
         
