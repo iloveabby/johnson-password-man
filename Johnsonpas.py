@@ -23,7 +23,7 @@ if userlogin != login: #if it's wrong this block is excuted and closes the progr
 passdir = input('Type the filepath and press enter.')
 
 while True:
-    user = input('r to read passwords w to save,)
+    user = input('r to read passwords w to save')
     if user == 'w':# this section is excucted if the user presses w and writes to the file 
         password = open(passdir, 'a')
         password.write('\n')
